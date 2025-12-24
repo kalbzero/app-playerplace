@@ -22,3 +22,20 @@ export interface Trade {
     security_postal_code_seller?: string,
     
 }
+export const initTrade: Trade = {
+    uid: '',
+    card_name: '',
+    quality: '',
+    trades_type: '',
+    id_trades_type: '',
+    id_trade_status: '',
+    status: '',
+    id_buyer: '',
+    buyer_name: '',
+    buyer_status: '',
+    buyer_id_status: '',
+    id_seller: '',
+    seller_name: '',
+    seller_status: '',
+    seller_id_status: '',
+};

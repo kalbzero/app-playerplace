@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AlertController, LoadingController } from '@ionic/angular';
-import { Trade } from 'src/app/interfaces/trade';
+import { initTrade, Trade } from 'src/app/interfaces/trade';
 import { FirebaseService } from 'src/app/services/firebase.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { FirebaseService } from 'src/app/services/firebase.service';
 })
 export class TradeFormPage implements OnInit {
 
-  trade: Trade = {buyer_name:'', buyer_status: '',card_name: '',id_buyer: '', id_seller: '',id_trades_type: '',quality: '',seller_name: '',seller_status: '',status: '', id_trade_status: '',trades_type: '',uid: '',collection: '',id_card: '',localization: '',obs: '',security_postal_code_buyer: '',security_postal_code_seller: '', buyer_id_status: '', seller_id_status: ''};
+  trade: Trade = initTrade;
   userStatus: string = '';
   useridStatus: string = '';
   userObs: string = '';

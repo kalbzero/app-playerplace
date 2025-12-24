@@ -4,5 +4,5 @@ export interface Message {
     fromName: string,
     msg: string,
     myMsg: boolean
-    createdAt: string
+    createdAt: any
 }
